@@ -14,6 +14,8 @@ Install djangoreauth
 
 Add to settings.py
 
+    import django.conf.global_settings as DEFAULT_SETTINGS
+    
     AUTHENTICATION_BACKENDS = DEFAULT_SETTINGS.AUTHENTICATION_BACKENDS + (
         'djangoreauth.authenticationbackend.ReAuthBackend',
     )
