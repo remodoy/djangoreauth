@@ -8,7 +8,6 @@ from .auth import reauth_authenticate_user
 
 @requires_csrf_token
 def reauth_login(request):
-    print("adfasdfa")
     if request.method == 'GET' and request.GET.get('code', None) is not None:
         code = request.GET.get('code')
         token = reauth.fetch_reauth_token(code, settings.REAUTH_URL)
