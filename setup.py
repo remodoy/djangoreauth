@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='djangoreauth',
-      version='0.1',
+      version='0.2',
       description='Django application for ReAuth authentication',
       keywords='reauth django authentication',
       author='Remod Oy',
